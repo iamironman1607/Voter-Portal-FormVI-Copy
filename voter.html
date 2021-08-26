@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVSP portal</title>
+  <link rel="icon" href="voterlogo.png" type="image/x-icon">
+  <!-- <link rel="stylesheet" href="OS.CSS"> -->
+  <link rel="stylesheet" href="voter.css">
+  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <table>
+      <div class="logo"><a href=""><img src="voterlogo.png"></a> </div>
+
+      <div class="hindi">
+        <p> राष्ट्रीय मतदान सेवा <br> डेमो पोर्टल</p>
+      </div>
+      <div class="english">
+        <p>
+          NATIONAL VOTERS' SERVICES <br> DEMO PORTAL</p>
+      </div>
+      <div class="logo1"><a href=""><img src="rightlogo.png"></a> </div>
+    </table>
+  </header>
+
+
+  <!-- form to top area -->
+
+  <section class="forms">
+    <div class="btn">
+      <button>A+</button>
+      <button>A-</button>
+      <div class="lang">
+        <label for="Language">Select Language :</label>
+        <select id="Language" name="Language">
+          <option value="Hindi">Hindi</option>
+          <option value="English">English</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- form area only -->
+
+    <div class="form-area">
+      <p class="red">Note: Fields marked with asterisks ( <span class="star">*</span> ) are mandatory</p>
+      <form>
+        <p class="firstpara"><b>Type 6 <br>[See rule 13(1) and 26]</b></p>
+        <p class="secondpara">Application for inclusion of name in the electoral roll for the first time due to the
+          transfer of voter or any other <br>constituency from any one constituency</p>
+        <p class="" style="padding:10px">In service</p>
+        <p style="padding:10px">Electoral Registration Officer,</p>
+
+        <div id="down">
+          <label for="state">State <span class="star">*</span></label>
+          <select id="state" name="state">
+            <option value="select">Select</option>
+            <option value="Bihar">Bihar</option>
+          </select>
+
+          <label style="padding-left:50px" for="District">District </label>
+          <select id="district" name="district">
+            <option value="Select">Select</option>
+
+          </select>
+          <br><br>
+          <label for="constituenc">Legislative Assembly / Parlimentary
+
+            constituency<span class="star">*</span></label>
+          <select id="constituenc" name="constituenc">
+            <option value="Select">Select</option>
+
+          </select>
+
+        </div>
+
+        <p style="padding:10px">I request that my name be included in electoral rolls for all the aforesaid areas.</p>
+        <div id="down">
+          <input type="radio" id="first" name="first" value="first">
+          <label for="first">First time voter</label><br>
+          <input type="radio" id="tran" name="first" value="tran">
+          <label for="female">Due to transfer from other meeting areas.</label>
+        </div>
+        <p style="padding:10px">Below are specifications in support of my claim to be included in the electoral rolls.
+        </p>
+        <p class="secondpara" style="margin-top:15px"><b>Mandatory specifications</b></p>
+
+
+        <div id="down">
+          <div class="modify">
+            <label for="fname">(A) Name<span class="star">*</span></label>
+            <input type="text" id="fname" name="fname" placeholder="(in English)">
+            <input type="text" id="fname" name="fname" placeholder="(in Regional)">
+            <label for="fname"> <i class="fa fa-keyboard-o" aria-hidden="true"></i></label><br>
+
+            <label for="surname">(B) Surname (if any)<span class="star">*</span></label>
+            <input type="text" id="surname" name="surname" placeholder="(in English)">
+            <input type="text" id="surname" name="surname" placeholder="(in Regional)">
+            <label for="surname"> <i class="fa fa-keyboard-o" aria-hidden="true"></i></label> <br>
+
+            <label for="relative">(C) Name of the applicant's relative<span class="star">*</span></label>
+            <input type="text" id="relative" name="relative" placeholder="(in English)">
+            <input type="text" id="relative" name="relative" placeholder="(in Regional)">
+            <label for="relative"> <i class="fa fa-keyboard-o" aria-hidden="true"></i></label><br>
+
+            <label for="nick_relative">Nickname of the applicant's relative<span class="star">*</span></label>
+            <input type="text" id="nick_relative" name="nick_relative" placeholder="(in English)">
+            <input type="text" id="nick_relative" name="nick_relative" placeholder="(in Regional)">
+            <label for="nick_relative"> <i class="fa fa-keyboard-o" aria-hidden="true"></i></label><br>
+
+            <label for="relationship">(D) Type of the relationship<span class="star">*</span></label>
+            <select id="relationship" name="relationship">
+              <option value="select">Select</option>
+            </select><br>
+
+            <input type="radio" id="first" name="first" value="first">
+            <label for="first">(E) Age [on January 1 of the current calender]</label>
+            <input type="text" id="first" name="f" placeholder="2019">
+            <select id="first" name="f">
+              <option value="select">Year</option>
+            </select>
+            <select id="first" name="f">
+              <option value="select">Month</option>
+            </select>
+            <br>
+
+            <p>Or</p>
+
+            <input type="radio" id="sec" name="first" value="first">
+            <label for="sec">(F) Date of birth (in the form of day/ month/ year)</label>
+            <input type="date" id="sec" name="birthday">
+            <div class="known">(if known)<span class="star">*</span></div>
+
+            <br>
+          </div>
+
+        </div>
+        <label id="genderr" for="gender">(G) Applicant's gender<span class="star">*</span></label>
+        <select id="gender" name="gender">
+          <option value="select">Select</option>
+        </select>
+        <p class="secondpara" style="margin-top:15px"><b>(H) Current address, whose applicant is nominally resident</b>
+        </p>
+
+
+        <div id="down">
+          <div class="modify">
+            <label for="houseno">House no.<span class="star">*</span></label>
+            <input type="text" id="houseno" name="houseno" placeholder="(in English)">
+            <input type="text" id="houseno" name="houseno" placeholder="(in Regional)">
+            <label for="houseno"> <i class="fa fa-keyboard-o" aria-hidden="true"></i><br></label>
+
+            <label for="Street">Street / area / location<span class="star">*</span></label>
+            <input type="text" id="Street" name="Street" placeholder="(in English)">
+            <input type="text" id="Street" name="Street" placeholder="(in Regional)">
+            <label for="Street"> <i class="fa fa-keyboard-o" aria-hidden="true"></i></label><br>
+
+            <label for="city">City / Village:<span class="star">*</span></label>
+            <input type="text" id="city" name="city" placeholder="(in English)">
+            <input type="text" id="city" name="city" placeholder="(in Regional)">
+            <label for="city"> <i class="fa fa-keyboard-o" aria-hidden="true"></i></label><br>
+
+            <label for="po">Post Office:<span class="star">*</span></label>
+            <input type="text" id="po" name="po" placeholder="(in English)">
+            <input type="text" id="po" name="po" placeholder="(in Regional)">
+            <label for="po"> <i class="fa fa-keyboard-o" aria-hidden="true"></i></label><br>
+
+            <label for="pincode"> Pin Code<span class="star">*</span></label>
+            <input type="text" id="pincode" name="pincode" placeholder=""><br>
+
+            <label for="state">State / Union Territory<span class="star">*</span></label>
+            <select id="state" name="state">
+              <option value="select">Select</option>
+            </select><br>
+
+            <label for="district-1">District<span class="star">*</span></label>
+            <select id="district-1" name="district-1">
+              <option value="select">Select</option>
+            </select><br>
+
+          </div>
+        </div>
+
+        <hr>
+
+        <div id="down">
+          <div class="modify">
+            <label for="Epic">Family / Neighbour Epic No.</label>
+            <input type="text" id="epic" name="epic" placeholder=""><br>
+          </div>
+        </div>
+        <hr>
+
+        <p class="secondpara" style="margin-top:30px"><b>Optional specialties</b></p>
+
+
+        <div id="down">
+          <div class="Optional">
+            <p>(T) Disability (if any)</p>
+            <input type="checkbox" id="visual" name="visual" value="Bike">
+            <label for="visual"> Visual impairment other </label>
+            <input type="checkbox" id="Speech" name="Speech" value="Car">
+            <label for="Speech"> Speech and hearing impairment </label>
+            <input type="checkbox" id="motio" name="motio" value="Boat">
+            <label for="motio"> Motion disabling </label>
+            <input type="checkbox" id="other" name="other" value="Boat">
+            <label for="other"> other </label>
+            <input type="text" id="other" name="other" placeholder="">
+            <br>
+            <label for="Email"> (Th) Email ID (optional) </label>
+            <input type="email" id="email" name="email" placeholder=""><br>
+            <label for="phone">(D) mobile number (optional) &nbsp; +91 </label>
+            <input type="phone" id="phone" name="phone" placeholder="">
+          </div>
+        </div>
+
+        <p class="secondpara" style="margin-bottom:25px"><b>Upload supporting documents (Supported formats .jpg, .png,
+            .bmp, .jpeg) (max. 2MB)</b><a href="">List of supported documents</a>
+        </p>
+        <div id="down">
+          <div class="upload">
+            <label for="photo">Your photo<span class="star">*</span></label><br>
+            <input type="file" id="photo" name="photo"><br>
+
+            <label for="age_proof">Age proof<span class="star">*</span></label><br>
+            <input type="file" id="age_proof" name="age_proof">
+            <label for="Document"> Document type<span class="star">*</span></label>
+            <select id="Document" name="Document">
+              <option value="select">Select</option>
+            </select>
+
+
+            <br> <label for="address">Adress proof<span class="star">*</span></label><br>
+            <input type="file" id="address" name="address">
+            <label for="Document1"> Document type<span class="star">*</span></label>
+            <select id="Document1" name="Document1">
+              <option value="select">Select</option>
+            </select>
+          </div>
+        </div>
+        <p class="secondpara" style="margin-bottom:20px"><b>Declaration</b>
+        </p>
+        <p style="padding:10px">I declare I declare that according to my best knowledge and belief<br>
+          I am a citizen of India and of my birth;</p>
+
+        <div id="down2">
+          <div class="declaration">
+
+            <label for="city_declaration"> City / Village: </label>
+            <input type="text" id="city_declaration" name="city_declaration" placeholder=""><br>
+            <label for="state"> Select State <span class="star">*</span></label>
+            <select id="state" name="state">
+              <option value="select">Select</option>
+              <option value="Orrisa">Orrisa</option>
+            </select>
+
+            <label style="padding-left:13px" for="District_declaration">District<span class="star">*</span> </label>
+            <select id="district_declaration" name="district_declaration">
+              <option value="Select">Select</option>
+            </select>
+            <br>
+            <label for="date_curr">Date <span class="star">*</span> </label>
+            <input type="date" id="date_curr" name="date2">
+          </div>
+        </div>
+        <p style="padding:10px">(ii) I am a nominally resident in the address given in the above (date, month, year)
+          above;</p>
+        <p style="padding:10px">I have not applied to include my name in the electoral roll for any other constituency;
+        </p>
+
+        <div id="down3">
+          <input type="radio" id="first" name="first" value="first">
+          <label for="first">(iv) My name has not been already included in the electoral roll for this or any other
+            assembly / parliamentary constituency</label>
+          <br>
+
+          <p style="padding-top:20px">Or</p>
+
+          <input type="radio" id="sec" name="first" value="first">
+          <label for="sec">My name would have been included in electoral rolls of the State's constituency, in which I
+            was already residing in the address mentioned below, and if so, then I request that it be removed from that
+            electoral roll. Go.
+          </label>
+        </div>
+        <p class="hrr">
+          <hr>
+        </p>
+        <div id="down">
+          <div class="hrr">
+            <label for="location"> Location<span class="star">*</span> </label>
+            <input type="text" id="location" name="location" placeholder="">
+
+            <label style="padding-left:30px" for="sec">Date </label>
+            <input type="date" id="sec" name="date3">
+          </div>
+        </div>
+
+        <p style="padding:10px">I am afraid that the statement or declaration, which is false, to whom I know it or
+          believe that it is false or I do not believe in being true, the People's<br> Representation Act, 1950 (43 of
+          1950 ) Is punishable under section 31</p>
+
+        <div id="down"><label for="Captcha"> Captcha</label>
+          <input type="text" id="Captcha" name="Captcha" placeholder="">
+        </div>
+        <div class="submit">
+          <button>Reset</button>
+          <button>Submit</button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <footer>
+    Copyright &copy; Shaw Consultants and Technology Pvt Ltd.
+  </footer>
+</body>
+
+</html>
+<!-- colo code: #55555/#77777 for dropdown
+colorcode : #CCCC99 form background -->
